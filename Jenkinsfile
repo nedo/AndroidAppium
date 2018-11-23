@@ -1,15 +1,12 @@
-pipeline {
-  agent {
-    node {
-      label 'android'
-    }
+#!/usr/bin/env groovy
 
-  }
-  stages {
-    stage('') {
-      steps {
-        echo 'hello'
-      }
+pipeline {
+    agent any 
+    stages {
+        stage('Stage 1') {
+            steps {
+                echo 'Hello world!' 
+            }
+        }
     }
-  }
 }
